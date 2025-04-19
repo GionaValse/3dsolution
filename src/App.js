@@ -1,25 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import HeaderBar from './component/header/HeaderBar';
+import FooterBar from './component/footer/FooterBar';
+import HomePage from './view/HomePage';
+import ContactPage from './view/ContactPage';
+import BrochurePage from './view/BrochurePage';
+import NotFoundPage from './view/NotFoundPage';
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <LayoutComponent />,
+		children: [
+			{
+				index: true,
+				element: <HomePage />,
+			},
+			{
+				path: "contatti",
+				element: <ContactPage />,
+			},
+			{
+				path: "brochure",
+				element: <BrochurePage />,
+			},
+			{
+				path: "*",
+				element: <NotFoundPage />,
+			},
+		],
+	},
+]);
+
+function LayoutComponent() {
+	return (
+		<>
+			<HeaderBar />
+			<main>
+				<Outlet />
+			</main>
+			<FooterBar />
+		</>
+	);
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
