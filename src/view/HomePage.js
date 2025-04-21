@@ -85,7 +85,7 @@ const ExplainContainer = styled.section`
 const ExplainContent = styled.div`
 	display: flex;
 	flex-direction: row;
-	flex-wrap: ${(params) => params.reverse ? 'wrap-reverse' : 'wrap'};
+	flex-wrap: ${(params) => (params.reverse ? "wrap-reverse" : "wrap")};
 	gap: 12px;
 
 	div {
@@ -111,9 +111,9 @@ export default function HomePage() {
 	}, []);
 
 	/*
-	* Le immagini sono da inserire in una cartella "images" all'interno della cartella "public"
-    * per inserirle nel progetto. <img src="/images/...." alt="..." />
-	* */
+	 * Le immagini sono da inserire in una cartella "images" all'interno della cartella "public"
+	 * per inserirle nel progetto. <img src="/images/...." alt="..." />
+	 * */
 
 	return (
 		<HomePageContainer>
@@ -130,7 +130,7 @@ export default function HomePage() {
 			<IntroArticle>
 				<h3>Benvenuto in 3D Solution!</h3>
 				<p>
-					il punto di incontro tra creatività e tecnologia, dove le
+					Il punto di incontro tra creatività e tecnologia, dove le
 					idee prendono forma attraverso la stampa 3D. Siamo un gruppo
 					di giovani appassionati che trasformano concetti in oggetti
 					unici, spaziando da portachiavi personalizzati a lampade di
@@ -147,72 +147,63 @@ export default function HomePage() {
 			<ExplainContainer>
 				<ExplainContent>
 					<div>
-						<h4>Lorem</h4>
+						<h4>Stampa 3D</h4>
 						<p>
-							Vivamus sollicitudin finibus enim congue ultricies.
-							Etiam accumsan laoreet est. Vestibulum ante ipsum
-							primis in faucibus orci luctus et ultrices posuere
-							cubilia curae; Integer at turpis id lorem
-							pellentesque sollicitudin semper eget tellus.
-							Suspendisse est lectus, euismod nec gravida non,
-							vestibulum at velit. Maecenas fermentum, lectus eget
-							aliquam commodo, eros elit eleifend erat, eu
-							vehicula massa tellus id sem. Sed pharetra metus
-							eget arcu porttitor pulvinar. Sed sagittis augue ac
-							finibus aliquet.
+							Diamo forma ai tuoi progetti, dal prototipo al
+							prodotto finito. Con la stampa 3D trasformiamo file
+							digitali in oggetti reali, funzionali e
+							personalizzati. Che si tratti di un componente
+							tecnico, un gadget su misura o un pezzo unico, lo
+							realizziamo con precisione, attenzione ai dettagli
+							ed utilizzando materiali di qualità sviluppati per
+							ogni esigenza. Perché ogni stampa è una soluzione su
+							misura, pensata per chi cerca innovazione, velocità
+							e libertà creativa.
 						</p>
 					</div>
 					<div>
-						<img
-							src="/images/lorem.jpeg"
-							alt="Modella"
-						/>
+						<img src="/images/lorem.jpeg" alt="stampa 3d immagine" />
 					</div>
 				</ExplainContent>
 				<ExplainContent reverse={true}>
 					<div>
 						<img
 							src="https://media.sketchfab.com/models/f74eeba8cd9b4e9ea7fcef5b44f74cc0/thumbnails/314e218c58974b629cfa599ef0dfe90c/5d5bf82897a84d59a66425b724485a58.jpeg"
-							alt="Modella"
+							alt="modellazione immagine"
 						/>
 					</div>
 					<div>
-						<h4>Ipsum</h4>
+						<h4>Modellazione</h4>
 						<p>
-							Praesent diam arcu, ullamcorper vel ipsum vitae,
-							egestas convallis velit. Aenean vitae libero urna.
-							Mauris non porta ex, quis pretium nulla. Sed semper
-							nisl tellus, ut eleifend leo tristique a. Aenean
-							lacus tellus, fermentum a orci at, aliquet sodales
-							ligula. In vitae neque nulla. Quisque pellentesque
-							suscipit posuere.
+							Creiamo modelli 3D personalizzati partendo da un
+							disegno, un'idea o anche solo una descrizione. Ogni
+							progetto è studiato nei minimi dettagli per essere
+							funzionale, stampabile e fedele alla tua visione.
+							Che si tratti di prototipi, pezzi tecnici o oggetti
+							di design, trasformiamo il concetto in un file 3D
+							pronto per essere realizzato. Nessun limite alla
+							creatività, solo soluzioni su misura.
 						</p>
 					</div>
 				</ExplainContent>
 				<ExplainContent>
 					<div>
-						<h4>Dolor</h4>
+						<h4>Scansione 3D</h4>
 						<p>
-							Integer gravida erat sed orci fringilla, ac posuere
-							magna finibus. Donec vel blandit orci. Suspendisse
-							in diam vel purus venenatis malesuada. Mauris
-							accumsan vitae mauris et cursus. Orci varius natoque
-							penatibus et magnis dis parturient montes, nascetur
-							ridiculus mus. Vivamus non purus ut nibh posuere
-							ultricies. Nunc sollicitudin, augue at hendrerit
-							hendrerit, leo odio venenatis lectus, ac egestas est
-							sapien sed ligula. Nam elementum urna dolor, ac
-							rhoncus odio congue et. Sed lacinia quis mauris non
-							venenatis. In hac habitasse platea dictumst.
-							Pellentesque ante orci, ullamcorper vel est ac,
-							feugiat facilisis sapien. Mauris porttitor accumsan
-							tortor, at aliquam arcu.
+							Con la scansione 3D trasformiamo oggetti fisici in
+							modelli digitali ad alta precisione. Perfetta per
+							ricreare pezzi esistenti, restaurare oggetti,
+							progettare modifiche o archiviare forme complesse in
+							digitale. Ogni dettaglio viene rilevato con cura,
+							per garantirti un modello fedele, pronto per essere
+							modificato, riprodotto o stampato. Dal reale al
+							virtuale, senza margine d'errore.
 						</p>
 					</div>
 					<div>
 						<img
 							src="https://media.sketchfab.com/models/12974fdc58514ba4b6ef7ee7462c93b0/thumbnails/97d1601c474e42bd879dffc7385a310b/2c5e251f908647cca7c91aeb1d66b2a4.jpeg"
-							alt="Modella"
+							alt="scansione 3d immagine"
 						/>
 					</div>
 				</ExplainContent>
